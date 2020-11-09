@@ -17,35 +17,21 @@
 	crossorigin="anonymous">
 
 <!-- Bootstrap core CSS -->
-<link
-	href="<%=request.getContextPath()%>/resources/vendor/bootstrap/css/bootstrap.min.css"
-	rel="stylesheet">
+<link href="<%=request.getContextPath()%>/resources/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
 <!-- Custom fonts for this template -->
-<link
-	href="<%=request.getContextPath()%>/resources/vendor/fontawesome-free/css/all.min.css"
-	rel="stylesheet" type="text/css">
-<link
-	href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic'
-	rel='stylesheet' type='text/css'>
-<link
-	href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
-	rel='stylesheet' type='text/css'>
+<link href="<%=request.getContextPath()%>/resources/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+<link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
 
 <!-- Custom styles for this template -->
-<link
-	href="<%=request.getContextPath()%>/resources/css/clean-blog.min.css"
-	rel="stylesheet">
-<link rel="stylesheet"
-	href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-	integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
-	crossorigin="anonymous">
+<link href="<%=request.getContextPath()%>/resources/css/clean-blog.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 </head>
 
 <body>
 	<!-- Navigation -->
-	<nav class="navbar navbar-expand-lg navbar-light fixed-top"
-		id="mainNav">
+	<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
 		<div class="container">
 			<a class="navbar-brand" href="./main_page.do">Smart Rider</a>
 			<button class="navbar-toggler navbar-toggler-right" type="button"
@@ -83,7 +69,6 @@
 								<a class="nav-link" href="./login_page.do">로그인</a>
 							</c:otherwise>
 						</c:choose></li>
-
 					<li class="nav-item"><c:choose>
 							<c:when test="${!empty sessionUserData }">
 								<a class="nav-link" href="./track_page.do">주행 기록</a>

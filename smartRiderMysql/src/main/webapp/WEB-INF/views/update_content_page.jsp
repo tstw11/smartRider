@@ -42,8 +42,7 @@
 </head>
 <body>
 	<!-- Navigation -->
-	<nav class="navbar navbar-expand-lg navbar-light fixed-top"
-		id="mainNav">
+	<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
 		<div class="container">
 			<a class="navbar-brand" href="./main_page.do">Smart Rider</a>
 			<button class="navbar-toggler navbar-toggler-right" type="button"
@@ -68,8 +67,8 @@
 						href="./main_page_about.do" role="button" aria-haspopup="true"
 						aria-expanded="false">동호회소개</a>
 						<div class="dropdown-menu">
-							<a class="dropdown-item" href="#">동호회 목록</a> <a
-								class="dropdown-item" href="#">동호회 등록</a>
+							<a class="dropdown-item" href="./club_list.do">동호회 목록</a> <a
+								class="dropdown-item" href="./club_create.do">동호회 등록</a>
 						</div></li>
 					<li class="nav-item"><a class="nav-link" href="#">라이딩 추천
 							경로</a></li>
@@ -81,7 +80,6 @@
 								<a class="nav-link" href="./login_page.do">로그인</a>
 							</c:otherwise>
 						</c:choose></li>
-
 					<li class="nav-item"><c:choose>
 							<c:when test="${!empty sessionUserData }">
 								<a class="nav-link" href="./track_page.do">주행 기록</a>
@@ -150,23 +148,6 @@
 			</div>
 		</div>
 	</div>
-
-
-
-
-	<!-- <form action="./update_content_process.do" method="post"> -->
-	<%-- 작성자 : ${data.memberVo.member_nick }<br> --%>
-	<%-- 제목 : <input type="text" name="board_title" value="${data.boardVo.board_title }"><br> --%>
-	<!-- 내용 : <br> -->
-	<%-- <textarea name="board_content" rows="5" cols="40">${data.boardVo.board_content }</textarea> --%>
-
-	<%-- <input type="hidden" name="board_no" value="${data.boardVo.board_no }"> --%>
-
-	<!-- <input type="submit" value="글 수정"> -->
-
-
-	<!-- </form> -->
-
 
 	<hr>
 

@@ -31,8 +31,7 @@
 
 <body>
 	<!-- Navigation -->
-	<nav class="navbar navbar-expand-lg navbar-light fixed-top"
-		id="mainNav">
+	<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
 		<div class="container">
 			<a class="navbar-brand" href="./main_page.do">Smart Rider</a>
 			<button class="navbar-toggler navbar-toggler-right" type="button"
@@ -70,7 +69,6 @@
 								<a class="nav-link" href="./login_page.do">로그인</a>
 							</c:otherwise>
 						</c:choose></li>
-	
 					<li class="nav-item"><c:choose>
 							<c:when test="${!empty sessionUserData }">
 								<a class="nav-link" href="./track_page.do">주행 기록</a>

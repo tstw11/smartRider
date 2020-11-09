@@ -29,8 +29,7 @@
 
 <body>
 	<!-- Navigation -->
-	<nav class="navbar navbar-expand-lg navbar-light fixed-top"
-		id="mainNav">
+	<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
 		<div class="container">
 			<a class="navbar-brand" href="./main_page.do">Smart Rider</a>
 			<button class="navbar-toggler navbar-toggler-right" type="button"
@@ -68,7 +67,6 @@
 								<a class="nav-link" href="./login_page.do">로그인</a>
 							</c:otherwise>
 						</c:choose></li>
-	
 					<li class="nav-item"><c:choose>
 							<c:when test="${!empty sessionUserData }">
 								<a class="nav-link" href="./track_page.do">주행 기록</a>
@@ -103,43 +101,40 @@
 				<div class="post-preview">
 					<a href="main_page_about.do">
 						<h2 class="post-title">Community</h2>
-						<h3 class="post-subtitle">Smart Rider 회원들이 소통할 수 있는 공간</h3>
+						<h3 class="post-subtitle">Smart Rider 회원들의 소통할 공간</h3>
 					</a>
 					<p class="post-meta">
-						Posted by <a href="main_page_about.do">Start Bootstrap</a> on September 24, 2020
+						Posted by <a href="main_page_about.do">Community</a> 
 					</p>
 				</div>
 				<hr>
 				<div class="post-preview">
 					<a href="club_list.do">
 						<h2 class="post-title">Bicycle Club</h2>
-						<h3 class="post-subtitle">주위에 자전거 동호회를 찾아보세요</h3>
+						<h3 class="post-subtitle">원하는 지역에 자전거 동호회를 찾아보세요</h3>
 					</a>
 					<p class="post-meta">
-						Posted by <a href="club_list.do">Start Bootstrap</a> on September 18, 2020
+						Posted by <a href="club_list.do">Bicycle Club</a> 
 					</p>
 				</div>
 				<hr>
 				<div class="post-preview">
-					<a href="post.html">
-						<h2 class="post-title">
-							Driving Record
-						</h2>
+					<a href="track_page.do">
+						<h2 class="post-title">Driving Record</h2>
 						<h3 class="post-subtitle">자신의 주행기록을 확인하세요</h3>
 					</a>
 					<p class="post-meta">
-						Posted by <a href="#">Start Bootstrap</a> on August 24, 2019
+						Posted by <a href="track_page.do">Driving Record</a> 
 					</p>
 				</div>
 				<hr>
 				<div class="post-preview">
-					<a href="post.html">
-						<h2 class="post-title">Failure is not an option</h2>
-						<h3 class="post-subtitle">Many say exploration is part of our
-							destiny, but it’s actually our duty to future generations.</h3>
+					<a href="club_create.do">
+						<h2 class="post-title">Bicycle Club Create</h2>
+						<h3 class="post-subtitle">주변에 동호회가 없으면 동호회를 만들 수 있습니다.</h3>
 					</a>
 					<p class="post-meta">
-						Posted by <a href="#">Start Bootstrap</a> on July 8, 2019
+						Posted by <a href="club_create.do">Bicycle Club Create</a>
 					</p>
 				</div>
 				<hr>
