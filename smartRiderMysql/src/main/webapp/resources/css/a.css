@@ -1,0 +1,27 @@
+@charset "UTF-8";
+table {
+  width: 500px;
+  border-collapse: collapse;
+}
+ 
+.td1 {
+  border: 1px solid #dddddd;
+  padding: 5px;
+  width: 150px;
+}
+ 
+.td2 {
+  border: 1px solid #dddddd;
+  padding: 5px;
+  width: 350px;
+}
+ 
+.text-over-cut {
+  display: block;
+  width: 350px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 0;
+}
+
