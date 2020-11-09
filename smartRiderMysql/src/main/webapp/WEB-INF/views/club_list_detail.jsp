@@ -152,22 +152,18 @@
 			</div>
 		</div>
 
-	</div>
-	
-		<div class="col">
-			<br> <a href="./club_list.do">목록으로</a>
-			<c:if
-				test="${!empty sessionUserData && sessionUserData.member_no == data.b.member_no }">
-				<a href="./delete_content_process.do?club_no=${data.club.club_no }">삭제</a>
-			</c:if>
+		<div class="row">
+			<div class="col-1"></div>
+			<div class="col">
+				<br> <a href="./club_list.do">목록으로</a>
+				<c:if
+					test="${!empty sessionUserData && sessionUserData.member_no == data.b.member_no }">
+					<a href="./delete_content_process.do?club_no=${data.club.club_no }">삭제</a>
+				</c:if>
+			</div>
+			<div class="col-1"></div>
 		</div>
-
-
-
-
-
-
-
+	</div>
 
 		<hr>
 
@@ -196,8 +192,7 @@
 								</span>
 							</a></li>
 						</ul>
-						<p class="copyright text-muted">Copyright &copy; Your Website
-							2020</p>
+						<p class="copyright text-muted">Copyright &copy; 안양대학교 소프트웨어학과 2020</p>
 					</div>
 				</div>
 			</div>

@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Select;
 
-import com.smartrider.bicycle.vo.BoardVo;
+
 import com.smartrider.bicycle.vo.ClubVo;
 import com.smartrider.bicycle.vo.MemberVo;
 

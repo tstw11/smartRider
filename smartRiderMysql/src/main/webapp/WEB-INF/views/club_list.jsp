@@ -98,7 +98,7 @@
 	</header>
 
 	<!-- Main Content -->
-		<div class="container mt-5">
+	<div class="container mt-5">
 		<div class="col" align="right">
 			<form action="./club_list.do" method="post"
 				class="form-inline my-2 my-lg-0">
@@ -109,7 +109,8 @@
 			</form>
 		</div>
 		<div class="row mt-3">
-				<div class="col">
+			<div class="col">
+				<div class="table-responsive" >
 				<table class="table table-hover">
 					<thead>
 						<tr>
@@ -121,39 +122,38 @@
 					</thead>
 					<tbody>
 						<c:forEach items="${xxx }" var="aaa">
-						<tr>
-							<th scope="row">${aaa.clubVo.club_no }</th>
-							<td>${aaa.clubVo.club_area }</td>
-							<td>
-								<div>
+							<tr>
+								<th scope="row">${aaa.clubVo.club_no }</th>
+								<td>${aaa.clubVo.club_area }</td>
+								<td>
 									<a href="./club_list_detail.do?club_no=${aaa.clubVo.club_no }">${aaa.clubVo.club_name }</a>
-								</div>
-							</td>
-							<td>
-								
-									${aaa.clubVo.club_introduce }
-								
-							</td>
+									
+								</td>
+								<td>
+									<div class="text-over-cut">
+										${aaa.clubVo.club_introduce }
+									</div>
+								</td>
 
-						</tr>
+							</tr>
 						</c:forEach>
 					</tbody>
 
 				</table>
-
 			</div>
 			</div>
 		</div>
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
+	</div>
+
+
+
+
+
+
+
+
+
+
 	<hr>
 
 	<!-- Footer -->

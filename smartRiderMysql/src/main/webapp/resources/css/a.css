@@ -18,7 +18,7 @@ table {
  
 .text-over-cut {
   display: block;
-  width: 350px;
+  width: 200px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;

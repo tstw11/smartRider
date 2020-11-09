@@ -172,7 +172,7 @@
               </a>
             </li>
           </ul>
-          <p class="copyright text-muted">Copyright &copy; Your Website 2020</p>
+          <p class="copyright text-muted">Copyright &copy; 안양대학교 소프트웨어학과 2020</p>
         </div>
       </div>
     </div>

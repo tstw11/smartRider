@@ -160,15 +160,13 @@
 			<div class="col">
 				<nav aria-label="Page navigation example">
 					<ul class="pagination">
-						<li class="page-item"><a class="page-link" href="#">&lt;</a></li>
-						<li class="page-item active"><a class="page-link"
-							href="./main_page.do?pnum=1">1</a></li>
-						<li class="page-item"><a class="page-link"
-							href="./main_page.do?pnum=2">2</a></li>
-						<li class="page-item"><a class="page-link" href="#">3</a></li>
-						<li class="page-item"><a class="page-link" href="#">4</a></li>
-						<li class="page-item"><a class="page-link" href="#">5</a></li>
-						<li class="page-item"><a class="page-link" href="#">&gt;</a></li>
+						<li class="page-item"><a class="page-link" href="./main_page_about.do">&lt;</a></li>
+						<li class="page-item active"><a class="page-link" href="./main_page_about.do?pnum=1">1</a></li>
+						<li class="page-item"><a class="page-link" href="./main_page_about.do">2</a></li>
+						<li class="page-item"><a class="page-link" href="./main_page_about.do">3</a></li>
+						<li class="page-item"><a class="page-link" href="./main_page_about.do">4</a></li>
+						<li class="page-item"><a class="page-link" href="./main_page_about.do">5</a></li>
+						<li class="page-item"><a class="page-link" href="./main_page_about.do">&gt;</a></li>
 					</ul>
 				</nav>
 			</div>
