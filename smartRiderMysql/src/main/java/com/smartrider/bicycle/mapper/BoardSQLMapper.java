@@ -23,20 +23,6 @@ public interface BoardSQLMapper {
 	@Select("SELECT * FROM bicycle_board WHERE board_title LIKE CONCAT('%',#{searchWord},'%') ORDER BY board_no DESC")
 	public ArrayList<BoardVo> selectByTitle(String searchWord);
 	
-	@Select("select * from bicycle_board order by board_no limit 0, 10")
-	public ArrayList<BoardVo> Paging();
-	
-	@Select("select * from bicycle_board order by board_no limit 10, 10")
-	public ArrayList<BoardVo> Paging2();
-	
-	@Select("select * from bicycle_board order by board_no limit 20, 10")
-	public ArrayList<BoardVo> Paging3();
-	
-	@Select("select * from bicycle_board order by board_no limit 40, 10")
-	public ArrayList<BoardVo> Paging4();
-	
-	@Select("select * from bicycle_board order by board_no limit 50, 10")
-	public ArrayList<BoardVo> Paging5();
 	//글 보기
 	@Select("SELECT * FROM bicycle_board WHERE board_no = #{no}")
 	public BoardVo selectByNo(int no);
@@ -48,7 +34,6 @@ public interface BoardSQLMapper {
 	//글 삭제....
 	@Delete("DELETE FROM bicycle_board WHERE board_no = #{no}")
 	public void delete(int no);
-	
 	
 	//글 수정....
 	@Update("UPDATE bicycle_board SET board_title = #{board_title} , board_content = #{board_content} WHERE board_no = #{board_no}")
